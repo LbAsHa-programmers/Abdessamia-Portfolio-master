@@ -45,6 +45,12 @@
                 <a href="#about" class="nav_link">About</a>
               </li>
               <li class="nav_item">
+                <a href="#qualifications" class="nav_link">Qualifications</a>
+              </li>
+              <li class="nav_item">
+                <a href="#certificates" class="nav_link">Certificates</a>
+              </li>
+              <li class="nav_item">
                 <a href="#skills" class="nav_link">Skills</a>
               </li>
               <li class="nav_item">
@@ -191,7 +197,7 @@
       </section>
 
       <!-- Qualification -->
-      <section class="qualification section">
+      <section class="qualification section" id="qualifications">
         <h2 data-heading="My Journey" class="section__title">Qualification</h2>
 
         <div class="qualification__container container grid">
@@ -268,6 +274,71 @@
                   2020 - In progress
                 </span>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="certificates section" id="certificates">
+        <div class="cardList">
+          <button class="cardList__btn btn btn--left">
+            <div class="icon">
+              <svg>
+                <use xlink:href="#arrow-left"></use>
+              </svg>
+            </div>
+          </button>
+
+          <div class="cards__wrapper">
+
+
+            <div class="card current--card">
+              <div class="card__image">
+                <img src="assets/images/Career Essentials in Data Analysis.PNG" alt="" />
+              </div>
+            </div>
+
+            <div class="card next--card">
+              <div class="card__image">
+                <img src="assets/images/Career Essentials in System.PNG" alt="" />
+              </div>
+            </div>
+
+            <div class="card previous--card">
+              <div class="card__image">
+                <img src="assets/images/Learning Data Analytics Part 2.PNG" alt="" />
+              </div>
+            </div>
+
+          </div>
+
+          <button class="cardList__btn btn btn--right">
+            <div class="icon">
+              <svg>
+                <use xlink:href="#arrow-right"></use>
+              </svg>
+            </div>
+          </button>
+        </div>
+
+        <div class="infoList">
+          <div class="info__wrapper">
+            <div class="info current--info">
+              <h1 class="text name">Highlands</h1>
+              <h4 class="text location">Scotland</h4>
+              <p class="text description">The mountains are calling</p>
+            </div>
+
+            <div class="info next--info">
+              <h1 class="text name">Machu Pichu</h1>
+              <h4 class="text location">Peru</h4>
+              <p class="text description">Adventure is never far away</p>
+            </div>
+
+            <div class="info previous--info">
+              <h1 class="text name">Chamonix</h1>
+              <h4 class="text location">France</h4>
+              <p class="text description">Let your dreams come true</p>
             </div>
           </div>
         </div>
@@ -429,7 +500,7 @@
                 </div>
 
                 <div class="skills__data">
-                  <div class="skills__titles">
+                <div class="skills__titles">
                     <h3 class="skills__name">SQL Server , ORACLE & MySQL</h3>
                     <span class="skills__nuber">85%</span>
                   </div>
@@ -1043,30 +1114,30 @@
           <div class="contact__content">
             <form action="" class="contact__form">
               <div class="input__container">
-                <input type="text" class="input" />
+                <input type="text" class="input" id="contactUser"/>
                 <label for="">Username</label>
                 <span>Username</span>
               </div>
 
               <div class="input__container">
-                <input type="email" class="input" />
+                <input type="email" class="input" id="contactEmail"/>
                 <label for="">Email</label>
                 <span>Email</span>
               </div>
 
               <div class="input__container">
-                <input type="tel" class="input" />
+                <input type="tel" class="input" id="contactPhone"/>
                 <label for="">Phone</label>
                 <span>Phone</span>
               </div>
 
               <div class="input__container textarea">
-                <textarea name="" id="" class="input"></textarea>
+                <textarea name="" class="input" id="contactMsg"></textarea>
                 <label for="">Message</label>
                 <span>Message</span>
               </div>
 
-              <button type="submit" class="button">
+              <button type="submit" class="button" id="contactSubmit">
                 <i class="uil uil-navigator button__icon"></i>
                 Contact Me
               </button>
@@ -1128,14 +1199,51 @@
 
     <!-- Scrool Up -->
    
-
+    <svg class="icons" style="display: none">
+      <symbol
+        id="arrow-left"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 512 512"
+      >
+        <polyline
+          points="328 112 184 256 328 400"
+          style="
+            fill: none;
+            stroke: #5f5f67;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            stroke-width: 48px;
+          "
+        />
+      </symbol>
+      <symbol
+        id="arrow-right"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 512 512"
+      >
+        <polyline
+          points="184 112 328 256 184 400"
+          style="
+            fill: none;
+            stroke: #5f5f67;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            stroke-width: 48px;
+          "
+        />
+      </symbol>
+    </svg>
     <!-- Mixitup Filter -->
     <script src="assets/js/mixitup.min.js"></script>
 
     <!-- Swiper JS -->
     <script src="assets/js/swiper-bundle.min.js"></script>
 
+        <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js"></script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        
     <!-- Main JS -->
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/main.js" defer></script>
   </body>
 </html>
